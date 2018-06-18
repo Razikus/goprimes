@@ -35,7 +35,6 @@ func main() {
 		for {
 			value := <-dividableStream
 			if(value) {
-				close(dividableStream)
 				break;
 			}
 			it = it + 1
